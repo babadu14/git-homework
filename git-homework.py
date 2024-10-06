@@ -3,13 +3,8 @@ def word(text):
         return False
     text = list(text)
     text.sort()
-    # for i in range(len(text)):
-    #     for j in range(i+1, len(text)):
-    #         if text[i] == text[j]:
-    #             return False
-    # return True
     l,r = 0, 1
-    while len(text) > r and len(text) > l:
+    while len(text) > r:
         if text[l] == text[r]:
             return False
         l +=1
